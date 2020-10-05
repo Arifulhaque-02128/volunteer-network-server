@@ -47,4 +47,4 @@ MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }, fu
 app.get('/', (req, res) => {
     res.send("Hello Node.JS...");
 })
-app.listen(port);
+app.listen(process.env.PORT || port);
